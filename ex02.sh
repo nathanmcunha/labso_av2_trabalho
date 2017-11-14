@@ -1,7 +1,8 @@
 #!/bin/bash
 cont=$1
 fat=1
-for (( cont ; cont >= 0; cont-- )); do
-  fat=$(( $fat*$cont ));
+for ((i=$cont; i > 0; i--))
+do
+   fat=$(( $fat * $i ))
 done
 echo $fat
